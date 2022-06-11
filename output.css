@@ -1,0 +1,18 @@
+.nav-main-mt {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  height: 65px;
+  padding-bottom: 0%;
+}
+.nav-main-mt > div > a {
+  width: 20%;
+}
+.nav-main-mt .nav-li {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.nav-main-mt .nav-li > a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=output.css.map */

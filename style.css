@@ -1,0 +1,8 @@
+.logo-nav{
+    width: 60%;
+}
+@media screen and (max-width: 425px){
+    .logo-nav{
+        width: 100%;
+    }
+}
