@@ -21,6 +21,71 @@
     text-align: center;
     align-items: center;
 }
+.card-galeria{
+    color: #fff;
+    width: 350px;
+    height: 400px;
+    border-radius: 0px;
+    text-align: center;
+    padding-top: 55%;
+    font-family: outset;
+}
+.title-travels-top9{
+    text-align: center;
+    align-content: center;
+}
+.bg-img-destino1{
+    background-image: url("./images/destino1.jpg");
+}
+.bg-img-destino2{
+    background-image: url("./images/destino2.jpg");
+}
+.bg-img-destino3{
+    background-image: url("./images/destino3.jpg");
+}
+.bg-img-destino4{
+    background-image: url("./images/destino4.jpg");
+}
+.bg-img-destino5{
+    background-image: url("./images/destino5.jpg");
+}
+.bg-img-destino6{
+    background-image: url("./images/destino6.jpg");
+}
+.bg-img-destino7{
+    background-image: url("./images/destino7.jpg");
+}
+.bg-img-destino8{
+    background-image: url("./images/destino8.jpg");
+}
+.bg-img-destino9{
+    background-image: url("./images/destino9.jpg");
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+}
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+}
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
 
 /* Celular */
 @media screen and (max-width: 425px){
@@ -29,11 +94,26 @@
     }
     .section-header{
         padding-top: 60%;
+        background-image: url("./images/header-mobile.jpg");
+        background-repeat: round;
     }
+    .card-galeria{
+        width: auto;
+    }
+    .section-contacto{
+        width: 100%;
+        height: 250px;
+    }
+
 }
 /* table */
 @media (min-width: 425px) and (max-width: 900px){
     .section-header{
         padding-top: 35%;
+        background-image: url("./images/header-tablet.jpg");
+        background-repeat: round;
+    }
+    .card-galeria{
+        width: auto;
     }
 }

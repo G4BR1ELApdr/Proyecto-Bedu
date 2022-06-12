@@ -19,6 +19,11 @@ h3{
     color: $black;
     font-family: $font-main-title;
 }
+h5{
+    font-family: $font-main-title;
+    color: $white;
+    font-size: 24px;
+}
 p{
     @extend %p-principal
 }
@@ -78,4 +83,6 @@ hr{
         }
     }
 }
+
+
 
