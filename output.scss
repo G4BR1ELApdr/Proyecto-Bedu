@@ -1,0 +1,87 @@
+p {
+  font-family: "Work Sans", sans-serif;
+  color: #121212;
+}
+
+.p-common {
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+}
+
+span {
+  font-family: "Playfair Display", serif;
+  color: #2094E6;
+}
+
+section {
+  padding-top: 5%;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+}
+
+h3 {
+  color: #121212;
+  font-family: "Playfair Display", serif;
+}
+
+h5 {
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 24px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+span {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #121212;
+}
+
+hr {
+  color: #E3DEC1;
+}
+
+.card-info {
+  border: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: left;
+  align-items: left;
+}
+.card-info > img {
+  width: 30%;
+}
+.card-info > p {
+  font-family: "Work Sans", sans-serif;
+  color: #121212;
+  font-size: 16px;
+}
+
+.nav-main-mt {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  height: 65px;
+  padding-bottom: 0%;
+}
+.nav-main-mt > div > a {
+  width: 20%;
+}
+.nav-main-mt .nav-li {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.nav-main-mt .nav-li > a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=output.scss.map */

@@ -1,15 +1,46 @@
 
+button{
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    background-color: #2094E6;
+    border: none;
+}
+button:hover{
+    background-color: transparent;
+    border: 1px solid;
+    color: #2094E6;
+    transition: 1s;
+}
 .logo-nav{
     width: 60%;
 }
 .logo-footer{
     width: 70%;
 }
+#animation{
+    animation-name: imgAnimation;
+    animation-duration: 3s;
+    position: relative;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+@keyframes imgAnimation{
+ 0% {display: hiden; top: 0; left: -50px;}
+ 100% {left: 60px; top: 0px;}
+}
 .section-header{
     width: 100%;
     height: 699px;
     padding-top: 15%;
     background-image: url("./images/header.jpg");
+    background-repeat: round;
+}
+.header-section-nosotros{
+    width: 100%;
+    height: 499px;
+    padding-top: 15%;
+    background-image: url("./images/headerNosotros.jpg");
     background-repeat: round;
 }
 .section-contacto{
@@ -86,11 +117,31 @@
 .btn:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
+.section-colaboradores{
+    text-align: center;
+    align-items: center;
+    background-color: #b1daf6;
+}
+.figure-colaboradores{
+    width: 80%;
+}
 
 /* Celular */
 @media screen and (max-width: 425px){
     .logo-nav{
         width: 100%;
+    }
+    #animation{
+        animation-name: imgAnimation;
+        animation-duration: 3s;
+        position: relative;
+        animation-delay: 1s;
+        animation-timing-function: linear;
+        animation-timing-function: infinite;
+    }
+    @keyframes imgAnimation{
+     0% {display: hiden; top: -10px; left: 0px;}
+     100% {left: 0px; top: 50px;}
     }
     .section-header{
         padding-top: 60%;

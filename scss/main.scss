@@ -3,14 +3,7 @@
 section{
     padding-top: 5%;
 }
-button{
-    justify-content: center;
-    align-items: center;
-    padding: 8px 24px;
-    background-color: $blue-cyan;
-    border: none;
-    @extend %p-common
-}
+
 h1{
     color: $white;
     font-family: $font-main-title;
