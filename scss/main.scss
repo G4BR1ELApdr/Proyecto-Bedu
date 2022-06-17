@@ -1,9 +1,9 @@
 @use 'global' as *;
 
+// Commons
 section{
     padding-top: 5%;
 }
-
 h1{
     color: $white;
     font-family: $font-main-title;
@@ -39,26 +39,9 @@ hr{
 .p-common{
     @extend %p-common
 }
-.card-info{
-    border: none;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    text-align: left;
-    align-items: left;
-
-    & > img{
-        width: 30%;
-    }
-
-    & > p{
-        font-family: $font-p;
-        color: $black;
-        font-size: 16px;
-    }
-}
-
 .nav-main-mt{
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    height: 65px;
+    height: 60px;
     padding-bottom: 0%;
 
     & > div {
@@ -76,6 +59,25 @@ hr{
         }
     }
 }
+// Main
+.card-info{
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: left;
+    align-items: left;
+
+    & > img{
+        width: 30%;
+    }
+
+    & > p{
+        font-family: $font-p;
+        color: $black;
+        font-size: 16px;
+    }
+}
+
+
 
 
 

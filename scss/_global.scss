@@ -1,24 +1,24 @@
-//Fuentes
+//Fonts
 $font-navbar: 'Work Sans', sans-serif;
 $font-p: 'Work Sans', sans-serif;
 $font-main-title: 'Playfair Display', serif;
 
-//Colores
+//Colors
 $white: #fff;
 $black: #121212;
 $blue-cyan: #2094E6;
 $dark-gray: #394D52;
 $beige: #E3DEC1;
 
-//combinaciones
+//Commons
 %p-principal{
     font-family: $font-p;
     color: $black;
 }
 
 %p-common{
-    font-family: $font-p;
     color: $white;
+    font-family: $font-p;
 }
 
 %title-principal{
