@@ -148,6 +148,23 @@ section .row figure img{
     background-color: #b1daf6;
 }
 
+/*Blog*/
+.section-header-blog{
+    width: 100%;
+    height: 499px;
+    padding-top: 15%;
+    background-image: url("./images/headerBlog.jpg");
+    background-repeat: round;
+}
+.card-blog{
+    width: 18rem;
+}
+.img-blog-info{
+    width: 100% !important;
+}
+.card-blog img{
+    height: 175px;
+}
 /* Mobile */
 @media screen and (max-width: 425px){
     .nav-bg-black{
@@ -185,6 +202,12 @@ section .row figure img{
     }
     .section-header-contact{
         height: 235px;
+    }
+    .section-header-blog{
+        height: 235px;
+    }
+    .img-blog-info{
+        width: 75% !important;
     }
 
 }
