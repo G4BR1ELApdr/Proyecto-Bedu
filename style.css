@@ -3,6 +3,17 @@ body{
 width: 100%;
 overflow-x: hidden;
 }
+h4{
+    color: #fff;
+}
+input{
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #b1daf6;
+    border: none;
+    padding: 5%;
+}
 button{
     justify-content: center;
     align-items: center;
@@ -192,6 +203,10 @@ section .row figure img{
 
 /* Mobile */
 @media screen and (max-width: 425px){
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
     .nav-bg-black{
         background-color: #121212;
     }
@@ -244,6 +259,10 @@ section .row figure img{
 }
 /* tablet */
 @media (min-width: 425px) and (max-width: 900px){
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
     .nav-bg-black{
         background-color: #121212;
     }
