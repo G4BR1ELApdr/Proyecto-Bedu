@@ -1,4 +1,8 @@
 /*commos*/
+body{
+width: 100%;
+overflow-x: hidden;
+}
 button{
     justify-content: center;
     align-items: center;
@@ -165,6 +169,27 @@ section .row figure img{
 .card-blog img{
     height: 175px;
 }
+
+/*Travels*/
+.section-header-travels{
+    width: 100%;
+    height: 499px;
+    padding-top: 15%;
+    background-image: url("./images/headerViajes.jpg");
+    background-repeat: round;
+}
+.section-travels-progress{
+    background-color: #b1daf6;
+    padding: 2%;
+    font-family: 'Playfair Display', serif;
+}
+.section-travels-progress p{
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    line-height: 27px;
+    -webkit-text-stroke: 1px #121212;
+}
+
 /* Mobile */
 @media screen and (max-width: 425px){
     .nav-bg-black{
@@ -209,6 +234,12 @@ section .row figure img{
     .img-blog-info{
         width: 75% !important;
     }
+    .card-blog{
+        width: 100%;
+    }
+    .section-header-travels{
+        height: 235px;
+    }
 
 }
 /* tablet */
@@ -223,5 +254,8 @@ section .row figure img{
     }
     .card-galery{
         width: auto;
+    }
+    .card-blog{
+        width: 100%;
     }
 }
