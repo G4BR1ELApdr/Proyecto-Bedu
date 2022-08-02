@@ -1,6 +1,6 @@
 class OpenWeatherMapService {
   _apiKey = '1ad894dfa08af17efcddbccc4255bf47';
-  _api = 'http://api.openweathermap.org/data/2.5';
+  _api = 'https://api.openweathermap.org/data/2.5';
 
   getCountries = () => ([
     {
