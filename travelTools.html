@@ -48,7 +48,7 @@
                     </li>
                     <li class="nav-item mx-3 nav-li">
                         <a class="nav-link" href="./contact.html">
-                            <button>Contacto</button>
+                            <button class="button_nav">Contacto</button>
                         </a>
                     </li>
                 </ul>
@@ -56,17 +56,20 @@
         </div>
     </nav>
     <!--Section Header-->
-    <section class="section-header-main mt-5">
+    <section class="section-header-travel mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-xs-12 col-md-10 col-lg-5">
-                    <h1>
-                        ¿Piensas viajar? <br>
-                        Verifica el clima
-                    </h1>
-                    <p class="p-common">
-                        A la hora de viajar es importante conocer el clima actual en tu destino, por eso, en Margarita
-                        Travel tienes acceso a esta seccion, para que viajes sin complicaciones.</p>
+                <div class="col-12 col-xs-12 col-md-10 col-lg-12">
+                    <div class="col-12 col-xs-12 col-md-10 col-lg-6">
+                        <h1>
+                            ¿Piensas viajar? <br>
+                            Verifica el clima
+                        </h1>
+                        <p class="p-common">
+                            A la hora de viajar es importante conocer el clima actual en tu destino, por eso, en
+                            Margarita
+                            Travel tienes acceso a esta seccion, para que viajes sin complicaciones.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,36 +80,33 @@
             <div class="row">
                 <!-- Results -->
                 <div class="col-12 col-xs-12 col-md-4 col-lg-4">
-                    <div class="card d-none" id="resultsContainer">
+                    <div class="card" id="resultsContainer">
                         <div class="card-body text-center">
-                            <h2>Clima en <h2 class="text-primary text-capitalize" id="cityTitle"></h2>
-                            </h2>
+                            <h2>Clima en <h2 class="text-primary text-capitalize" id="cityTitle">tu ciudad</h2></h2>
                             <p>Temperatura actual:</p>
                             <div class="d-flex justify-content-center">
-                                <h5 class="text-primary" id="tempText"></h5>
+                                <h5 class="text-primary" id="tempText">--</h5>
                                 <p class="text-primary">&#x2103;</p>
                             </div>
-                            <p>Temperatura maxima:</p>
+                            <p>Temperatura máxima:</p>
                             <div class="d-flex justify-content-center">
-                                <h5 class="text-danger" id="tempMaxText"></h5>
-                                <p class="text-danger"> &#x2103; </p>
+                                <h5 class="text-danger" id="tempMaxText">--</h5>
+                                <p class="text-danger">&#x2103;</p>
                             </div>
-                            <p>Temperatura minima:</p>
+                            <p>Temperatura mínima:</p>
                             <div class="d-flex justify-content-center">
-
-                                <h5 class="text-info" id="tempMinText"></h5>
-                                <p class="text-info"> &#x2103; </p>
+                                <h5 class="text-info" id="tempMinText">--</h5>
+                                <p class="text-info">&#x2103;</p>
                             </div>
-                            <p>Sensacion termica:</p>
+                            <p>Sensación térmica:</p>
                             <div class="d-flex justify-content-center">
-                                <h5 class="text-warning" id="sensseTemp"></h5>
-                                <p class="text-warning"> &#x2103; </p>
+                                <h5 class="text-warning" id="sensseTemp">--</h5>
+                                <p class="text-warning">&#x2103;</p>
                             </div>
-
                         </div>
                     </div>
                     <div id="error" class="d-flex d-none flex flex-col text-center h-100 align-items-center">
-                        <h2 class="text-danger">No se encontro la ciudad.</h2>
+                        <h2 class="text-danger">No se encontró la ciudad.</h2>
                     </div>
                     <div id="loading" class="d-flex d-none flex flex-col text-center h-100 align-items-center">
                         <h2 class="text-center text-primary">Cargando...</h2>
@@ -118,7 +118,7 @@
                         Busca tu destino.
                     </span>
                     <h3>
-                        Aqui puedes ver el clima actual en tu lugar de destino.
+                        Aquí puedes ver el clima actual en tu lugar de destino.
                     </h3>
                     <form id="searchForm">
                         <div class="w-100">
@@ -128,10 +128,10 @@
                             </div>
                             <div class="col-md-6 w-100 mb-4">
                                 <select name="country" id="country" class="form-control">
-                                    <option value="" selected disabled>Selecciona un pais</option>
+                                    <option value="" selected disabled>Selecciona un país</option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary d-block btn-block w-100">Buscar</button>
+                            <button type="submit" class="">Buscar</button>
                         </div>
                     </form>
                 </div>
@@ -201,32 +201,42 @@
                     </div>
                 </div>
             </section>
-            <!--Section searchs-->
+
             <section class="my-5 p-0">
                 <div class="container text-center">
-                    <span>vuelos</span>
+                    <span class="text-muted">Vuelos</span>
                     <h3 class="mb-5">Busca tu vuelo al mejor precio</h3>
                     <form id="travelForm">
                         <div class="row">
-                            <div class="col-12 col-xs-12 col-md-6 col-lg-6">
-                                <p>Ingrese ciudad de origen y ciudad de destino</p>
-                                <input type="text" id="originInput" name="originInput" required minlength="4"
-                                    maxlength="8" placeholder="Origen" class="mb-3">
-                                <input type="text" id="destinyInput" name="destinyInput" required minlength="4"
-                                    maxlength="8" placeholder="Destino" class="mb-3">
-
+                            <div class="col-12 col-xs-12 col-md-6 col-lg-6 mb-4">
+                                <p class="text-muted">Ingrese ciudad de origen y ciudad de destino</p>
+                                <div class="input-group">
+                                    <input type="text" id="originInput" name="originInput" required placeholder="Origen"
+                                        class="form-control custom-input">
+                                </div>
+                                <div class="input-group mt-3">
+                                    <input type="text" id="destinyInput" name="destinyInput" required
+                                        placeholder="Destino" class="form-control custom-input">
+                                </div>
                             </div>
-                            <div class="col-12 col-xs-12 col-md-6 col-lg-6">
-
-                                <p>Ingrese fecha de salida y fecha de llegada</p>
-                                <input type="date" id="start" name="trip-start" min="2022-08-01" max="2022-12-31"
-                                    class="mb-3">
-                                <input type="date" id="end" name="trip-end" min="2022-08-01" max="2025-12-31"
-                                    class="mb-3">
+                            <div class="col-12 col-xs-12 col-md-6 col-lg-6 mb-4">
+                                <p class="text-muted">Ingrese fecha de salida y fecha de llegada</p>
+                                <div class="input-group">
+                                    <input type="date" id="start" name="trip-start" required
+                                        class="form-control custom-input">
+                                </div>
+                                <div class="input-group mt-3">
+                                    <input type="date" id="end" name="trip-end" required
+                                        class="form-control custom-input">
+                                </div>
                             </div>
-                            <div class="col-12 col-xs-12 col-md-12 col-lg-12">
-                                <button type="submit" class="my-3">Buscar vuelo</button>
+                            <div class="col-12 col-xs-12 col-md-12 col-lg-12 mb-4">
+                                <!-- Botón con estilo personalizado -->
+                                <a href="#" class="nav-link">
+                                    <button type="submit" class="button_nav">Buscar vuelo</button>
+                                </a>
                             </div>
+                        </div>
                     </form>
                 </div>
             </section>
@@ -234,11 +244,12 @@
                 <div class="container">
                     <h2>Vuelo disponible</h2>
                     <h2 id="travelTitle"></h2>
-                    <p>Descripcion</p>
+                    <p>Descripción</p>
                     <p id="travelDescription"></p>
-                    <p>Fecha maxima de estancia: <span id="endDate"></span></p>
+                    <p>Fecha máxima de estancia: <span id="endDate"></span></p>
                 </div>
             </section>
+
             <h2 id="notFound" class="text-center mb-5 d-none">Sin vuelos disponibles</h2>
         </div>
     </section>
@@ -288,7 +299,7 @@
                 </div>
                 <hr />
                 <div class="col-12 col-xs-12 col-md-12 col-lg-12 mt-3">
-                    <p class="p-common">© 2022 Margarita Travel | All Rights Reserved</p>
+                    <p class="p-common">© 2025 Margarita Travel | All Rights Reserved</p>
                 </div>
             </div>
         </div>
