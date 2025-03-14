@@ -1,12 +1,14 @@
-/*commos*/
-body{
-width: 100%;
-overflow-x: hidden;
+/* Comos */
+body {
+    width: 100%;
+    overflow-x: hidden;
 }
-h4{
+
+h4 {
     color: #fff;
 }
-input{
+
+input {
     width: 300px;
     height: 50px;
     border-radius: 5px;
@@ -14,7 +16,8 @@ input{
     border: none;
     padding: 5%;
 }
-button{
+
+button {
     justify-content: center;
     align-items: center;
     padding: 8px 24px;
@@ -22,37 +25,111 @@ button{
     border: none;
     border-radius: 8px;
 }
-button:hover{
+
+button:hover {
     background-color: transparent;
     border: 1px solid;
     color: #2094E6;
     transition: 1s;
 }
-.logo-nav{
+
+.logo-nav {
     width: 40%;
     margin-left: 30%;
 }
-.logo-footer{
+
+.logo-footer {
     width: 70%;
 }
-.button_nav{
+
+.button_nav {
     border-radius: 5px;
 }
-#animation{
+
+#animation {
     animation-name: imgAnimation;
     animation-duration: 3s;
     position: relative;
     animation-delay: 1s;
     animation-timing-function: linear;
 }
-@keyframes imgAnimation{
- 0% {display: hiden; top: 0; left: -50px;}
- 100% {left: 60px; top: 0px;}
+
+@keyframes imgAnimation {
+    0% {display: hiden; top: 0; left: -50px;}
+    100% {left: 60px; top: 0px;}
 }
-.text-center{
+
+.text-center {
     text-align: center;
     align-content: center;
 }
+/* Estilo para el fondo cuando el menú hamburguesa está activo */
+.navbar-collapse {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: transparent; /* Fondo transparente para que no se sobreponga */
+}
+
+/* Estilo para las listas dentro del menú */
+.navbar-nav {
+    display: flex;
+    flex-direction: column;  /* Las secciones se alinean verticalmente */
+    justify-content: center;
+    width: 100%;
+}
+
+/* Espaciado entre los elementos del menú */
+.nav-item {
+    text-align: center;
+    margin-bottom: 10px; /* Espacio entre los ítems */
+}
+
+.nav-item .nav-link {
+    color: white; /* Color blanco para los enlaces */
+    font-size: 18px; /* Tamaño de fuente para el menú */
+}
+
+/* Cambiar color de los enlaces cuando se pasa el mouse */
+.nav-item .nav-link:hover {
+    color: #2094E6; /* Color azul para el hover */
+}
+
+.button_nav:hover {
+    background-color: #2094E6;
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 767px) {
+    .navbar-toggler {
+        border-color: transparent; /* Borde transparente */
+        background-color: transparent; /* Fondo transparente */
+    }
+
+    /* Cambiar color de las tres líneas (hamburguesa) */
+    .navbar-toggler-icon {
+        background-color: rgba(255, 255, 255, 0.7); /* Líneas blancas semi-transparentes */
+    }
+
+    /* Para cambiar las líneas de la hamburguesa */
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after,
+    .navbar-toggler-icon span {
+        background-color: rgba(255, 255, 255, 0.7); /* Líneas blancas semi-transparentes */
+    }
+
+    /* Para hacer el logo más grande en pantallas pequeñas */
+    .logo-nav {
+        width: 80%; /* Aumentar el tamaño del logo en dispositivos pequeños */
+        margin-left: 20%; /* Ajustar la alineación */
+    }
+
+    /* Fondo cuando el menú está desplegado */
+    .navbar-collapse.show {
+        background-color: transparent; /* Evita que el fondo cambie al abrir el menú */
+    }
+}
+
+
 
 /*Main*/
 .section-header-main{
@@ -280,23 +357,56 @@ section .row figure img{
 
 }
 /* tablet */
-@media (min-width: 425px) and (max-width: 900px){
-    body{
+@media (min-width: 425px) and (max-width: 900px) {
+    body {
         width: 100%;
         overflow-x: hidden;
     }
-    .nav-bg-black{
-        background-color: #121212;
+    
+    /* Fondo de la barra de navegación en dispositivos tablet */
+    .nav-bg-black {
+        background-color: #121212; /* Fondo oscuro */
     }
-    .section-header-main{
-        padding-top: 35%;
+
+    /* Estilo para la sección de encabezado en tablet */
+    .section-header-main {
+        padding-top: 35%; /* Espaciado superior */
         background-image: url("./images/header-tablet.jpg");
-        background-repeat: round;
+        background-repeat: round; /* Asegura que la imagen de fondo se repita correctamente */
+        background-size: cover; /* Asegura que la imagen cubra toda la sección */
     }
-    .card-galery{
-        width: auto;
+
+    /* Ajustes para las tarjetas en la galería */
+    .card-galery {
+        width: auto; /* Ajusta el tamaño de las tarjetas en la galería para que se ajusten al contenido */
     }
-    .card-blog{
-        width: 100%;
+
+    /* Ajustes para las tarjetas de blog */
+    .card-blog {
+        width: 100%; /* Hace que las tarjetas del blog ocupen el 100% del ancho disponible */
+    }
+
+    /* Logo más grande en tablet */
+    .logo-nav {
+        width: 80%; /* Hace que el logo sea más grande en tablet */
+        margin-left: 25%; /* Ajusta la alineación para que el logo esté centrado */
+    }
+
+    /* Estilo para las líneas del menú hamburguesa en tablet */
+    .navbar-toggler {
+        border-color: transparent; /* Borde transparente */
+        background-color: transparent; /* Fondo transparente */
+    }
+
+    /* Cambiar color de las tres líneas (hamburguesa) */
+    .navbar-toggler-icon {
+        background-color: rgba(255, 255, 255, 0.7); /* Líneas blancas semi-transparentes */
+    }
+
+    /* Para cambiar las líneas de la hamburguesa */
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after,
+    .navbar-toggler-icon span {
+        background-color: rgba(255, 255, 255, 0.7); /* Líneas blancas semi-transparentes */
     }
 }
