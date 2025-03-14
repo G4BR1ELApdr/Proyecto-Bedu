@@ -68,6 +68,55 @@
         </div>
     </section>
     <!--Section info travels-->
+    <section class="my-5 p-0">
+        <div class="container text-center">
+            <span class="text-muted">Vuelos</span>
+            <h3 class="mb-5">Busca tu vuelo al mejor precio</h3>
+            <form id="travelForm">
+                <div class="row">
+                    <div class="col-12 col-xs-12 col-md-6 col-lg-6 mb-4">
+                        <p class="text-muted">Ingrese ciudad de origen y ciudad de destino</p>
+                        <div class="input-group">
+                            <input type="text" id="originInput" name="originInput" required placeholder="Origen"
+                                class="form-control custom-input">
+                        </div>
+                        <div class="input-group mt-3">
+                            <input type="text" id="destinyInput" name="destinyInput" required
+                                placeholder="Destino" class="form-control custom-input">
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-12 col-md-6 col-lg-6 mb-4">
+                        <p class="text-muted">Ingrese fecha de salida y fecha de llegada</p>
+                        <div class="input-group">
+                            <input type="date" id="start" name="trip-start" required
+                                class="form-control custom-input">
+                        </div>
+                        <div class="input-group mt-3">
+                            <input type="date" id="end" name="trip-end" required
+                                class="form-control custom-input">
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-12 col-md-12 col-lg-12 mb-4">
+                        <!-- Botón con estilo personalizado -->
+                        <a href="#" class="nav-link">
+                            <button type="submit" class="button_nav">Buscar vuelo</button>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="resultsTravel" class="my-5 d-none">
+        <div class="container">
+            <h2>Vuelo disponible</h2>
+            <h2 id="travelTitle"></h2>
+            <p>Descripción</p>
+            <p id="travelDescription"></p>
+            <p>Fecha máxima de estancia: <span id="endDate"></span></p>
+        </div>
+    </section>
+
+    <h2 id="notFound" class="text-center mb-5 d-none">Sin vuelos disponibles</h2>
     <section>
         <div class="container">
             <div class="row">
@@ -144,40 +193,40 @@
             </div>
         </div>
     </section>
-    <!--Section video and info-->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-xs-12 col-md-12 col-lg-6 p-5">
-                    <span>
-                        Viaja con nosotros
-                    </span>
-                    <h3>
-                        Explora el mundo
-                    </h3>
-                    <p>
-                        Dar la vuelta al mundo es el sueño de muchos. La curiosidad parece ser un impulso para ir a
-                        explorar tierras lejanas y desconocidas, y dejarse sorprender. ¿No es magnifico? De pronto te
-                        encuentras fuera de tu casa frente a las pirámides de Egipto o recorriendo las ruinas de Machu
-                        Picchu y entonces confirmas que no es lo mismo mirar una postal que estar ahí. Conocer más
-                        rincones del planeta también significa aprender nuevas formas de vida, nuevas culturas que, más
-                        allá de descubrirlas, también valoras. La
-                        importancia de viajar está en que no hay marcha atrás, es un boleto solo de ida en la vida.
-                    </p>
-                </div>
-                <div class="col-12 col-xs-6 col-md-12 col-lg-6 p-5">
-                    <article>
-                        <div>
-                            <video autoplay controls class="w-100">
-                                <source src="C:\Users\GABI\Downloads\playa.mp4" />
-                                <source src="C:\Users\GABI\Downloads\playa.mp4" />
-                            </video>
-                        </div>
-                    </article>
-                </div>
+<!--Section video and info-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-xs-12 col-md-12 col-lg-6 p-5">
+                <span>
+                    Viaja con nosotros
+                </span>
+                <h3>
+                    Explora el mundo
+                </h3>
+                <p>
+                    Dar la vuelta al mundo es el sueño de muchos. La curiosidad parece ser un impulso para ir a
+                    explorar tierras lejanas y desconocidas, y dejarse sorprender. ¿No es magnifico? De pronto te
+                    encuentras fuera de tu casa frente a las pirámides de Egipto o recorriendo las ruinas de Machu
+                    Picchu y entonces confirmas que no es lo mismo mirar una postal que estar ahí. Conocer más
+                    rincones del planeta también significa aprender nuevas formas de vida, nuevas culturas que, más
+                    allá de descubrirlas, también valoras. La
+                    importancia de viajar está en que no hay marcha atrás, es un boleto solo de ida en la vida.
+                </p>
+            </div>
+            <div class="col-12 col-xs-6 col-md-12 col-lg-6 p-5">
+                <article>
+                    <div>
+                        <!-- Embed YouTube video -->
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/icMPQ84mG1Y" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </article>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
     <!--Section contact-->
     <section class="section-contact">
         <div class="container">
@@ -245,6 +294,11 @@
             </div>
         </div>
     </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="./js/OpenWeatherMapService.js"></script>
+    <script src="./js/SearchWeather.js"></script>
+    <script src="./js/Travels.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
