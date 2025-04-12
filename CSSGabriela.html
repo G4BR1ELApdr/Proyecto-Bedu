@@ -63,6 +63,446 @@
     </nav>
     
     <!--Section Header-->
+    <section class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xs-12 col-md-10">
+                    <h1>
+                        Código HTML
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        body {<br>
+            width: 100%;<br>
+            overflow-x: hidden;<br>
+        }<br>
+        <br>
+        h4 {<br>
+            color: #fff;<br>
+        }<br>
+        <br>
+        input {<br>
+            width: 300px;<br>
+            height: 50px;<br>
+            border-radius: 5px;<br>
+            background-color: #b1daf6;<br>
+            border: none;<br>
+            padding: 5%;<br>
+        }<br>
+        <br>
+        button {<br>
+            justify-content: center;<br>
+            align-items: center;<br>
+            padding: 8px 24px;<br>
+            background-color: #2094E6;<br>
+            border: none;<br>
+            border-radius: 8px;<br>
+        }<br>
+        <br>
+        button:hover {<br>
+            background-color: transparent;<br>
+            border: 1px solid;<br>
+            color: #2094E6;<br>
+            transition: 1s;<br>
+        }<br>
+        <br>
+        .logo-nav {<br>
+            width: 40%;<br>
+            margin-left: 30%;<br>
+        }<br>
+        <br>
+        .logo-footer {<br>
+            width: 70%;<br>
+        }<br>
+        <br>
+        .button_nav {<br>
+            border-radius: 5px;<br>
+        }<br>
+        <br>
+        #animation {<br>
+            animation-name: imgAnimation;<br>
+            animation-duration: 3s;<br>
+            position: relative;<br>
+            animation-delay: 1s;<br>
+            animation-timing-function: linear;<br>
+        }<br>
+        <br>
+        @keyframes imgAnimation {<br>
+            0% {display: hiden; top: 0; left: -50px;}<br>
+            100% {left: 60px; top: 0px;}<br>
+        }<br>
+        <br>
+        .text-center {<br>
+            text-align: center;<br>
+            align-content: center;<br>
+        }<br>
+        <br>
+        .navbar-collapse {<br>
+            padding-top: 10px;<br>
+            padding-bottom: 10px;<br>
+            background-color: transparent; /* Fondo transparente para que no se sobreponga */<br>
+        }<br>
+        <br>
+        .navbar-nav {<br>
+            display: flex;<br>
+            flex-direction: column;  /* Las secciones se alinean verticalmente */<br>
+            justify-content: center;<br>
+            width: 100%;<br>
+        }<br>
+        <br>
+        .nav-item {<br>
+            text-align: center;<br>
+            margin-bottom: 10px; /* Espacio entre los ítems */<br>
+        }<br>
+        <br>
+        .nav-item .nav-link {<br>
+            color: white; /* Color blanco para los enlaces */<br>
+            font-size: 18px; /* Tamaño de fuente para el menú */<br>
+        }<br>
+        <br>
+        .nav-item .nav-link:hover {<br>
+            color: #2094E6; /* Color azul para el hover */<br>
+        }<br>
+        <br>
+        .button_nav:hover {<br>
+            background-color: #2094E6;<br>
+        }<br>
+        <br>
+        @media (max-width: 767px) {<br>
+            .navbar-toggler {<br>
+                border-color: transparent; /* Borde transparente */<br>
+                background-color: transparent; /* Fondo transparente */<br>
+            }<br>
+            <br>
+            .navbar-toggler-icon {<br>
+                background-color: rgba(255, 255, 255, 0.7); /* Líneas blancas semi-transparentes */<br>
+            }<br>
+            <br>
+            .navbar-toggler-icon::before,<br>
+            .navbar-toggler-icon::after,<br>
+            .navbar-toggler-icon span {<br>
+                background-color: rgba(255, 255, 255, 0.7); /* Líneas blancas semi-transparentes */<br>
+            }<br>
+            <br>
+            .logo-nav {<br>
+                width: 80%; /* Aumentar el tamaño del logo en dispositivos pequeños */<br>
+                margin-left: 20%; /* Ajustar la alineación */<br>
+            }<br>
+            <br>
+            .navbar-collapse.show {<br>
+                background-color: transparent; /* Evita que el fondo cambie al abrir el menú */<br>
+            }<br>
+        }<br>
+        <br>
+        }<br>
+        <br>
+        /*Main*/<br>
+        .section-header-main{<br>
+            width: 100%;<br>
+            height: 699px;<br>
+            padding-top: 15%;<br>
+            background-image: url("./images/bg-new.png");<br>
+            background-repeat: round;<br>
+        }<br>
+        <br>
+        .card-galery{<br>
+            color: #fff;<br>
+            width: 350px;<br>
+            height: 400px;<br>
+            border-radius: 0px;<br>
+            text-align: center;<br>
+            padding-top: 55%;<br>
+            padding-left: 2%;<br>
+            padding-right: 2%;<br>
+            font-family: outset;<br>
+        }<br>
+        <br>
+        .bg-img-destination1{<br>
+            background-image: url("./images/destino1.jpg");<br>
+            border-radius: 8px;<br>
+        }<br>
+        <br>
+        .bg-img-destination2{<br>
+            background-image: url("./images/destino2.jpg");<br>
+            border-radius: 8px;<br>
+        }<br>
+        <br>
+        .bg-img-destination3{<br>
+            background-image: url("./images/destino3.jpg");<br>
+            border-radius: 8px;<br>
+        }<br>
+        <br>
+        .bg-img-destination4{<br>
+            background-image: url("./images/destino4.jpg");<br>
+            border-radius: 8px;<br>
+        }<br>
+        <br>
+        .bg-img-destination5{<br>
+            background-image: url("./images/destino5.jpg");<br>
+            border-radius: 8px;<br>
+        }<br>
+        <br>
+        .bg-img-destination6{<br>
+            background-image: url("./images/destino6.jpg");<br>
+            border-radius: 8px;<br>
+        }<br>
+        <br>
+        .bg-img-destination7{<br>
+            background-image: url("./images/destino7.jpg");<br>
+            border-radius: 8px;<br>
+        }<br>
+        <br>
+        .bg-img-destination8{<br>
+            background-image: url("./images/destino8.jpg");<br>
+            border-radius: 8px;<br>
+        }<br>
+        <br>
+        .bg-img-destination9{<br>
+            background-image: url("./images/destino9.jpg");<br>
+            border-radius: 8px;<br>
+        }<br>
+        <br>
+        .section-contact{<br>
+            width: 100%;<br>
+            height: 450px;<br>
+            padding-top: 5%;<br>
+            background-image: url("./images/contacto.jpg");<br>
+            border-radius: 8px;<br>
+            background-repeat: round;<br>
+            text-align: center;<br>
+            align-items: center;<br>
+        }<br>
+        <br>
+        .back-to-top {<br>
+            position: fixed;<br>
+            display: none;<br>
+            right: 45px;<br>
+            bottom: 45px;<br>
+            z-index: 99;<br>
+        }<br>
+        <br>
+        .btn-lg-square {<br>
+            width: 48px;<br>
+            height: 48px;<br>
+            padding: 0;<br>
+            display: flex;<br>
+            align-items: center;<br>
+            justify-content: center;<br>
+            font-weight: normal;<br>
+            border-radius: 50px;<br>
+        }<br>
+        <br>
+        .btn {<br>
+            font-weight: 500;<br>
+            transition: .5s;<br>
+        }<br>
+        <br>
+        .btn:hover {<br>
+            box-shadow: 0 0 10px rgba(0, 0, 0, .5);<br>
+        }<br>
+        <br>
+        .section-header-travel{<br>
+            width: 100%;<br>
+            height: 499px;<br>
+            padding-top: 15%;<br>
+            background-image: url("./images/headerTravel.jpg");<br>
+            background-repeat: no-repeat;<br>
+            background-size: cover;<br>
+        }<br>
+        <br>
+        /*AboutUs*/<br>
+        .section-header-aboutUs{<br>
+            width: 100%;<br>
+            height: 499px;<br>
+            padding-top: 15%;<br>
+            background-image: url("./images/headerNosotros.jpg");<br>
+            background-repeat: round;<br>
+        }<br>
+        .section-partners{<br>
+            text-align: center;<br>
+            align-items: center;<br>
+            background-color: #b1daf6;<br>
+        }<br>
+        .section-partners .container .row figure{<br>
+            width: 80%;<br>
+        }<br>
+        <br>
+        /*Contact*/<br>
+        .section-header-contact{<br>
+            width: 100%;<br>
+            height: 499px;<br>
+            padding-top: 15%;<br>
+            background-image: url("./images/headerContacto.jpg");<br>
+            background-repeat: round;<br>
+        }<br>
+        section .row figure img{<br>
+            width: 20%;<br>
+        }<br>
+        .bg-color-map{<br>
+            background-color: #b1daf6;<br>
+        }<br>
+        <br>
+        /*Blog*/<br>
+        .section-header-blog{<br>
+            width: 100%;<br>
+            height: 499px;<br>
+            padding-top: 15%;<br>
+            background-image: url("./images/headerBlog.jpg");<br>
+            background-repeat: round;<br>
+        }<br>
+        .card-blog{<br>
+            width: 18rem;<br>
+        }<br>
+        .img-blog-info{<br>
+            width: 100% !important;<br>
+        }<br>
+        .card-blog img{<br>
+            height: 175px;<br>
+        }<br>
+        <br>
+        /*Travels*/<br>
+        .section-header-travels{<br>
+            width: 100%;<br>
+            height: 499px;<br>
+            padding-top: 15%;<br>
+            background-image: url("./images/headerViajes.jpg");<br>
+            background-repeat: round;<br>
+        }<br>
+        .section-travels-progress{<br>
+            background-color: #b1daf6;<br>
+            padding: 2%;<br>
+            font-family: 'Playfair Display', serif;<br>
+        }<br>
+        .section-travels-progress p{<br>
+            font-family: 'Playfair Display', serif;<br>
+            font-size: 18px;<br>
+            line-height: 27px;<br>
+            -webkit-text-stroke: 1px #121212;<br>
+        }<br>
+        <br>
+        /* Mobile */<br>
+        @media screen and (max-width: 425px){<br>
+            body{<br>
+                width: 100%;<br>
+                overflow-x: hidden;<br>
+            }<br>
+            .nav-bg-black{<br>
+                background-color: #121212;<br>
+            }<br>
+            .logo-nav{<br>
+                width: 100%;<br>
+            }<br>
+            #animation{<br>
+                animation-name: imgAnimation;<br>
+                animation-duration: 3s;<br>
+                position: relative;<br>
+                animation-delay: 1s;<br>
+                animation-timing-function: linear;<br>
+                animation-timing-function: infinite;<br>
+            }<br>
+            @keyframes imgAnimation{<br>
+             0% {display: hiden; top: -10px; left: 0px;}<br>
+             100% {left: 0px; top: 50px;}<br>
+            }<br>
+            .section-header-main{<br>
+                padding-top: 60%;<br>
+                background-image: url("./images/header-mobile.jpg");<br>
+                background-repeat: round;<br>
+            }<br>
+            .card-galery{<br>
+                width: auto;<br>
+            }<br>
+            .section-contact{<br>
+                width: 100%;<br>
+                height: 250px;<br>
+            }<br>
+            .section-header-aboutUs{<br>
+                height: 235px;<br>
+            }<br>
+            .section-header-contact{<br>
+                height: 235px;<br>
+            }<br>
+            .section-header-blog{<br>
+                height: 235px;<br>
+            }<br>
+            .img-blog-info{<br>
+                width: 75% !important;<br>
+            }<br>
+            .card-blog{<br>
+                width: 100%;<br>
+            }<br>
+            .section-header-travels{<br>
+                height: 235px;<br>
+            }<br>
+        }<br>
+        <br>
+        /* tablet */<br>
+        @media (min-width: 425px) and (max-width: 900px) {<br>
+            body {<br>
+                width: 100%;<br>
+                overflow-x: hidden;<br>
+            }<br>
+            <br>
+            .nav-bg-black {<br>
+                background-color: #121212; /* Fondo oscuro */<br>
+            }<br>
+            <br>
+            .section-header-main {<br>
+                padding-top: 35%; /* Espaciado superior */<br>
+                background-image: url("./images/header-tablet.jpg");<br>
+                background-repeat: round; /* Asegura que la imagen de fondo se repita correctamente */<br>
+                background-size: cover; /* Asegura que la imagen cubra toda la sección */<br>
+            }<br>
+            <br>
+            .card-galery {<br>
+                width: auto; /* Ajusta el tamaño de las tarjetas en la galería para que se ajusten al contenido */<br>
+            }<br>
+            <br>
+            .card-blog {<br>
+                width: 100%; /* Hace que las tarjetas del blog ocupen el 100% del ancho disponible */<br>
+            }<br>
+            <br>
+            .logo-nav {<br>
+                width: 80%; /* Hace que el logo sea más grande en tablet */<br>
+                margin-left: 25%; /* Ajusta la alineación para que el logo esté centrado */<br>
+            }<br>
+            <br>
+            .navbar-toggler {<br>
+                border-color: transparent; /* Borde transparente */<br>
+                background-color: transparent; /* Fondo transparente */<br>
+            }<br>
+            <br>
+            .navbar-toggler-icon {<br>
+                background-color: rgba(255, 255, 255, 0.7); /* Líneas blancas semi-transparentes */<br>
+            }<br>
+            <br>
+            .navbar-toggler-icon::before,<br>
+            .navbar-toggler-icon::after,<br>
+            .navbar-toggler-icon span {<br>
+                background-color: rgba(255, 255, 255, 0.7); /* Líneas blancas semi-transparentes */<br>
+            }<br>
+        }<br>
+        
+    </div>
+
+         <!--Section Header-->
+    <section class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xs-12 col-md-10">
+                    <h1>
+                        Resultados
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+    <!--Section Header-->
     <section class="section-header-main mt-5">
         <div class="container">
             <div class="row">
@@ -357,6 +797,7 @@
             </div>
         </div>
     </section>
+    </div>
     <!--Footer-->
     <footer class="p-5">
         <div class="container">
